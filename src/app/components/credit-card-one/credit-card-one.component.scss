@@ -1,8 +1,8 @@
 @import '../../../styles.scss';
 
 .credit-card{
-    background-color: #d61d40;
-    color: white;
+    background-color: $magenta-pantone;
+    color: $white;
     height: 16rem;
     border-radius: 1rem;
 
@@ -15,28 +15,26 @@
         // center card
 
         & .chip{
+            border: 3px solid $magenta-pantone-chip;
             height: 3rem;
             width: 4rem;
             border-radius: .5rem;
-            background-color: white;
+            background-color: $white;
         }
     }
 
     & .bottom{
         // bottom card
 
-        margin-top: 5rem;
+        margin-top: 5.5rem;
 
         & .flag{
 
-            // margin-top: -2rem;
             margin-top: -1.5rem;
 
             & .master{
-                background-color: #191970;
+                background-color: $flag-master;
                 border: 1px solid $white;
-                // height: 3.5rem;
-                // width: 3.5rem;
                 height: 3rem;
                 width: 3rem;
                 height: 3rem;
@@ -44,10 +42,8 @@
 
             }
             & .card{
-                background-color: #191970;
+                background-color: $flag-master;
                 border: 1px solid $white;
-                // height: 3.5rem;
-                // width: 3.5rem;
                 height: 3rem;
                 width: 3rem;
                 height: 3rem;
