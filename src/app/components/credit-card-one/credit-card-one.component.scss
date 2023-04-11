@@ -1,10 +1,15 @@
 @import '../../../styles.scss';
 
-.credit-card{
-    background-color: $magenta-pantone;
-    color: $white;
+@mixin cc-colors($bg-color, $font-color){
+    background: $bg-color;
+    color: $font-color;
     height: 16rem;
     border-radius: 1rem;
+}
+
+.credit-card-1{
+    
+    @include cc-colors(linear-gradient($flag-master, $pantone-magenta), $white);
 
     & .top{
         // top card
@@ -15,7 +20,113 @@
         // center card
 
         & .chip{
-            border: 3px solid $magenta-pantone-chip;
+            border: 3px solid $pantone-magenta-chip;
+            height: 3rem;
+            width: 4rem;
+            border-radius: .5rem;
+            background-color: $white;
+        }
+    }
+
+    & .bottom{
+        // bottom card
+
+        margin-top: 5.5rem;
+
+        & .flag{
+
+            margin-top: -1.5rem;
+
+            & .master{
+                background-color: $flag-master;
+                border: 1px solid $white;
+                height: 3rem;
+                width: 3rem;
+                height: 3rem;
+                width: 3rem;
+
+            }
+            & .card{
+                background-color: $flag-master;
+                border: 1px solid $white;
+                height: 3rem;
+                width: 3rem;
+                height: 3rem;
+                width: 3rem;
+                margin-left: -1rem;
+            }
+
+        }
+    }
+}
+
+.credit-card-2{
+    
+    @include cc-colors(linear-gradient($black, $grey-dark, $black), $grey-dark-variant);
+
+    & .top{
+        // top card
+
+    }
+
+    & .center{
+        // center card
+
+        & .chip{
+            border: 3px solid $grey-dark;
+            height: 3rem;
+            width: 4rem;
+            border-radius: .5rem;
+            background-color: $grey-dark;
+        }
+    }
+
+    & .bottom{
+        // bottom card
+
+        margin-top: 5.5rem;
+
+        & .flag{
+
+            margin-top: -1.5rem;
+
+            & .master{
+                background-color: $grey-dark;
+                border: 1px solid $white;
+                height: 3rem;
+                width: 3rem;
+                height: 3rem;
+                width: 3rem;
+
+            }
+            & .card{
+                background-color: $grey-dark;
+                border: 1px solid $white;
+                height: 3rem;
+                width: 3rem;
+                height: 3rem;
+                width: 3rem;
+                margin-left: -1rem;
+            }
+
+        }
+    }
+}
+
+.credit-card-3{
+    
+    @include cc-colors($flag-master, $white);
+
+    & .top{
+        // top card
+
+    }
+
+    & .center{
+        // center card
+
+        & .chip{
+            border: 3px solid $grey-dark-variant;
             height: 3rem;
             width: 4rem;
             border-radius: .5rem;
