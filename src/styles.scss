@@ -1,13 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
 
 // variables
-
 $white: #fff;
 $black: #000;
-$dark-grey: #1c1c1c;
+$grey-dark: #1c1c1c;
+$grey-dark-variant: #696969;
+
+// cards colors
+$pantone-magenta: #BE3455;
+
+// card chip colors
+$pantone-magenta-chip: #be3454b6;
+
+// flag colors
 $flag-master: #191970;
-$magenta-pantone: #BE3455;
-$magenta-pantone-chip: #be3454b6;
 
 
-body{background-color: $dark-grey;}
+body{background-color: $grey-dark;}
