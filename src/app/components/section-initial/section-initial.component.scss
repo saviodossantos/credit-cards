@@ -1,0 +1,35 @@
+@import '../../../styles.scss';
+
+.bg{
+    background-image: url('../../../assets/img/bg-section-initial-alternative.png');
+    background-size: cover;
+    background-position: center top;
+    height: 51rem;
+    padding: 0;
+}
+
+.overlay{
+    // background-image: linear-gradient(to right, transparent, black);
+    background-color: black;
+    width: inherit;
+    height: inherit;
+    opacity: .5;
+    position: absolute;
+}
+
+.container-center{
+    height: inherit;
+}
+
+.card{
+    border-radius: 1rem;
+    background-color: white;
+}
+
+h4{font-family: 'roboto_condensed_light';}
+
+button{
+    background-color: $flag-master;
+    color: $white;
+    z-index: 1;
+}
