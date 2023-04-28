@@ -3,7 +3,7 @@
 // variables
 $white: #fff;
 $black: #000;
-$grey-dark: #1c1c1c;
+$grey-dark: #1c1c1c; //#252525
 $grey-dark-variant: #696969;
 
 // cards colors
@@ -15,5 +15,21 @@ $pantone-magenta-chip: #be3454b6;
 // flag colors
 $flag-master: #191970;
 
+@font-face {
+    font-family: roboto_condensed;
+    src: url(assets/font/RobotoCondensed/RobotoCondensed-Regular.ttf) format("opentype");
+}
+
+@font-face {
+    font-family: roboto_condensed_light;
+    src: url(assets/font/RobotoCondensed/RobotoCondensed-Light.ttf) format("opentype");
+}
+
+@font-face {
+    font-family: roboto_condensed_bold;
+    src: url(assets/font/RobotoCondensed/RobotoCondensed-Bold.ttf) format("opentype");
+}
+
+*{font-family: 'roboto_condensed';}
 
 body{background-color: $grey-dark;}
