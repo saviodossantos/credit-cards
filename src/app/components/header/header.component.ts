@@ -1,4 +1,8 @@
 import { Component } from '@angular/core';
+import { 
+   faRightToBracket,
+  faChevronDown
+} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-header',
@@ -7,4 +11,10 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
+  faRightToBracket = faRightToBracket
+  faChevronDown = faChevronDown
+
+  aviso(){
+    alert('Caminho indisponível')
+  }
 }
