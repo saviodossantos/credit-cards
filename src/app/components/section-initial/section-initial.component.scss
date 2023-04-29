@@ -17,7 +17,7 @@
     position: absolute;
 }
 
-.container-center{
+.container-height-inherit{
     height: inherit;
 }
 
@@ -29,7 +29,7 @@
 h4{font-family: 'roboto_condensed_light';}
 
 button{
-    background-color: $flag-master;
+    background-color: $segment-color;
     color: $white;
     z-index: 1;
 }
