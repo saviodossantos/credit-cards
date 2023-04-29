@@ -1,3 +1,48 @@
-<div class="container-fluid" style="background-color:green; color: white; text-align: center;">
-    <h6>pilot</h6>
+<div class="container-fluid fundo-segmento">
+    <div class="container container-height-inherit d-flex">
+        <div class="row w-100 align-items-center justify-content-between">
+            <div class="col-2">
+                <h1>$Bank</h1>
+            </div>
+            <div class="d-lg-block d-none col-lg-2">
+                <a href="#" (click)="aviso()" class="text-decoration-none text-white">
+                    <h5>Página inicial</h5>
+                </a>
+            </div>
+            <div class="d-lg-block d-none col-lg-2">
+                <a href="#" (click)="aviso()" class="text-decoration-none text-white d-flex">
+                    <h5 class="me-3">Produtos</h5>
+                    <fa-icon [icon]="faChevronDown"></fa-icon>
+                </a>
+            </div>
+            <div class="d-lg-block d-none col-lg-2">
+                <a href="#" (click)="aviso()" class="text-decoration-none text-white">
+                    <h5>Institucional</h5>
+                </a>
+            </div>
+            <div class="d-lg-block d-none col-lg-2">
+                <a href="#" (click)="aviso()" class="text-decoration-none text-white">
+                    <h5>Sobre o $Bank</h5>
+                </a>
+            </div>
+
+            <div class="d-lg-block d-none col-lg-2">
+                <form action="">
+                    <button class="w-100 border-0 bg-transparent d-flex justify-content-end text-white"
+                        [disabled]="true">
+                        Login
+                        <fa-icon [icon]="faRightToBracket" class="ps-2"></fa-icon>
+                    </button>
+                </form>
+            </div>
+            <div class="d-lg-none col-1">
+                <input type="checkbox" id="checkbox-menu">
+                <label for="checkbox-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+        </div>
+    </div>
 </div>
