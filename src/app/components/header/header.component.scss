@@ -3,7 +3,6 @@
 .fundo-segmento {
     background-color: $segment-color;
     height: 5rem;
-    color: $white;
 }
 
 .container-height-inherit {
@@ -15,6 +14,40 @@ button {
     z-index: 1;
 }
 
+.menuMobile {
+    position: absolute;
+    background-color: $segment-color;
+    height: 100%;
+    // top: 0;
+
+    & a {
+
+        &:link,
+        &:visited,
+        &:active {
+            color: $white;
+        }
+    }
+    & ul {
+
+        & li {
+
+
+            // &::before {
+            //     content: '';
+            //     display: block;
+            //     height: 1px;
+            //     width: 100%;
+            //     position: absolute;
+            //     left: 0;
+            //     background-color: #6e6e6e;
+            // }
+        }
+
+    }
+}
+
+
 #checkbox-menu {
     position: absolute;
     opacity: 0;
@@ -23,9 +56,8 @@ button {
 label {
     cursor: pointer;
     position: relative;
-    display: block;
     height: 22px;
-    width: 30px;
+    width: 2rem;
 }
 
 label span {
@@ -35,7 +67,7 @@ label span {
     width: 100%;
     border-radius: 30px;
     background: $white;
-    transition: 0.25s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 label span:nth-child(1) {
