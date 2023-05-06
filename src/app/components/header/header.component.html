@@ -1,95 +1,91 @@
-<div class="container-fluid text-white fundo-segmento">
-    <div class="container container-height-inherit d-flex">
-        <div class="row w-100 align-items-center justify-content-between">
-            <div class="col-4 col-lg-2">
-                <h1>$Bank</h1>
-            </div>
-            <div class="d-lg-block d-none col-lg-2">
-                <a href="#" (click)="aviso()" class="text-decoration-none text-white">
-                    <h5>Página inicial</h5>
-                </a>
-            </div>
-            <div class="d-lg-block d-none col-lg-2">
-                <a href="#" (click)="aviso()" class="text-decoration-none text-white d-flex">
-                    <h5 class="me-3">Produtos</h5>
-                    <fa-icon [icon]="faChevronDown"></fa-icon>
-                </a>
-            </div>
-            <div class="d-lg-block d-none col-lg-2">
-                <a href="#" (click)="aviso()" class="text-decoration-none text-white">
-                    <h5>Institucional</h5>
-                </a>
-            </div>
-            <div class="d-lg-block d-none col-lg-2">
-                <a href="#" (click)="aviso()" class="text-decoration-none text-white">
-                    <h5>Sobre o $Bank</h5>
-                </a>
-            </div>
+<div class="container-fluid text-white fundo-segmento fixed-top">
+  <div class="container container-height-inherit d-flex">
+    <div class="row w-100 align-items-center justify-content-between">
+      <div class="col-4 col-lg-2">
+        <h1>$Bank</h1>
+      </div>
+      <div class="d-lg-block d-none col-lg-2">
+        <a href="#" (click)="aviso()" class="text-decoration-none text-white">
+          <h5>Página inicial</h5>
+        </a>
+      </div>
+      <div class="d-lg-block d-none col-lg-2">
+        <a href="#" (click)="aviso()" class="text-decoration-none text-white d-flex">
+          <h5 class="me-3">Produtos</h5>
+          <fa-icon [icon]="faChevronDown"></fa-icon>
+        </a>
+      </div>
+      <div class="d-lg-block d-none col-lg-2">
+        <a href="#" (click)="aviso()" class="text-decoration-none text-white">
+          <h5>Institucional</h5>
+        </a>
+      </div>
+      <div class="d-lg-block d-none col-lg-2">
+        <a href="#" (click)="aviso()" class="text-decoration-none text-white">
+          <h5>Sobre o $Bank</h5>
+        </a>
+      </div>
 
-            <div class="d-lg-block d-none col-lg-2">
-                <button class="w-100 border-0 bg-transparent d-flex justify-content-end text-white" [disabled]="true">
-                    Login
-                    <fa-icon [icon]="faRightToBracket" class="ps-2"></fa-icon>
-                </button>
-            </div>
-
-
+      <div class="d-lg-block d-none col-lg-2">
+        <button class="w-100 border-0 bg-transparent d-flex justify-content-end text-white" [disabled]="true">
+          Login
+          <fa-icon [icon]="faRightToBracket" class="ps-2"></fa-icon>
+        </button>
+      </div>
 
 
 
-            <div class="d-lg-none col-1">
-                <input type="checkbox" id="checkbox-menu" (click)="toggle()">
-                <label for="checkbox-menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </label>
-            </div>
-        </div>
+
+
+      <div class="d-lg-none col-1">
+        <input type="checkbox" id="checkbox-menu" (click)="toggle()">
+        <label for="checkbox-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
     </div>
-    <div class="row d-lg-none">
-        <div [@fadeAnimation] *ngIf="isOpen" class="col-12 w-100 text-white menuMobile" style="z-index:2;">
-            <div class="container">
+  </div>
+  <div class="row d-lg-none">
+    <div [@fadeAnimation] *ngIf="isOpen" class="col-12 w-100 text-white menuMobile" style="z-index:2;">
+      <div class="container">
 
-                <ul class="p-0">
-                    <li class="dropdown-item">
+        <ul class="p-0">
+          <li class="dropdown-item">
+            <h3 class="mt-4 pt-4">Página inicial</h3>
+          </li>
+          <li class="dropdown-item">
+            <h3 class="pt-4">Produtos</h3>
+          </li>
+          <li class="dropdown-item">
+            <h3 class="pt-4">Institucional</h3>
+          </li>
+          <li class="dropdown-item">
+            <h3 class="pt-4">Sobre o $Bank</h3>
+          </li>
+          <li class="dropdown-item">
+            <h3 class="pt-4">
+              Login
+              <fa-icon [icon]="faRightToBracket" class="ps-2"></fa-icon>
+            </h3>
+          </li>
+        </ul>
 
-                        <h3 class="mt-4 pt-4">Página inicial</h3>
-                    </li>
-                    <li class="dropdown-item">
+        <div class="pt-4 d-flex align-items-center justify-content-between">
 
-                        <h3 class="pt-4">Produtos</h3>
-                    </li>
-                    <li class="dropdown-item">
+          <h6>
+            <a href="https://www.linkedin.com/in/saviodossantos/" target="_blank" class="text-decoration-none">
+              <fa-icon [icon]="faLinkedin" class="fs-4"></fa-icon>
 
-                        <h3 class="pt-4">Institucional</h3>
-                    </li>
-                    <li class="dropdown-item">
-
-                        <h3 class="pt-4">Sobre o $Bank</h3>
-                    </li>
-                    <li class="dropdown-item">
-                        <h3 class="pt-4">
-                            Login
-                            <fa-icon [icon]="faRightToBracket" class="ps-2"></fa-icon>
-                        </h3>
-                    </li>
-                </ul>
-                <div class="pt-4 d-flex align-items-center justify-content-between">
-
-                    <h6>
-                        <a href="https://www.linkedin.com/in/saviodossantos/" target="_blank"
-                            class="text-decoration-none">
-                            <fa-icon [icon]="faLinkedin" class="fs-5"></fa-icon>
-
-                        </a>
-                        <a href="https://www.github.com/saviodossantos/" target="_blank" class="text-decoration-none">
-                            <fa-icon [icon]="faGithub" class="ps-3 fs-5"></fa-icon>
-                        </a>
-                    </h6>
-                    <p class="fs-6">05/2023</p>
-                </div>
-            </div>
+            </a>
+            <a href="https://www.github.com/saviodossantos/" target="_blank" class="text-decoration-none">
+              <fa-icon [icon]="faGithub" class="ps-3 fs-5"></fa-icon>
+            </a>
+          </h6>
+          <p class="fs-6">05/2023</p>
         </div>
+      </div>
     </div>
+  </div>
 </div>
