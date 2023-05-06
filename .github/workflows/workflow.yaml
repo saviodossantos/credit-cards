@@ -3,7 +3,7 @@ name: Continuous Integration
 on: pull_request
 
 jobs:
-  continuous_integration:
+  continuous-integration:
     runs-on: ubuntu-latest
 
     steps:
@@ -13,7 +13,7 @@ jobs:
         with:
           node-version: 18.x
       - name: run install, build and test
-        uses: |
+        run: |
           npm install
           npm run build
           npm run test
