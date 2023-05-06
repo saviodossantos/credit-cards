@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { SectionInitialComponent } from './section-initial.component';
 
 describe('SectionInitialComponent', () => {
@@ -8,6 +8,7 @@ describe('SectionInitialComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
+      imports: [ FontAwesomeModule ],
       declarations: [ SectionInitialComponent ]
     })
     .compileComponents();

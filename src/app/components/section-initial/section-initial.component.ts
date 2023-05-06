@@ -14,4 +14,9 @@ export class SectionInitialComponent {
   faChevronRight = faChevronRight
   faUser = faUser
 
+  bancoImagens: object =  [
+    "../../../assets/img/bg-section-initial-alternative.png",
+    "../../../assets/img/bg-section-initial.png"
+  ]
+
 }

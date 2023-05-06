@@ -9,11 +9,10 @@
 }
 
 .overlay{
-    // background-image: linear-gradient(to right, transparent, black);
-    background-color: black;
+    background-color: $black;
     width: inherit;
     height: inherit;
-    opacity: .5;
+    opacity: .6;
     position: absolute;
 }
 
@@ -23,7 +22,7 @@
 
 .card{
     border-radius: 1rem;
-    background-color: white;
+    background-color: $white;
 }
 
 h4{font-family: 'roboto_condensed_light';}
