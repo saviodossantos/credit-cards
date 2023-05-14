@@ -1,5 +1,6 @@
+import { animate, style, transition, trigger } from '@angular/animations';
 import { Component } from '@angular/core';
-import { 
+import {
   faChevronRight,
   faUser
 } from '@fortawesome/free-solid-svg-icons';
@@ -8,15 +9,32 @@ import {
 @Component({
   selector: 'app-section-initial',
   templateUrl: './section-initial.component.html',
-  styleUrls: ['./section-initial.component.scss']
+  styleUrls: ['./section-initial.component.scss'],
+  animations: [
+    trigger('loadPageAnimation', [
+      transition(':enter', [
+        style({ opacity: 0 }), animate('2s')
+      ])
+    ]),
+    trigger('fadeTextAnimation', [
+      transition(':enter', [
+        style({ opacity: 0 }), animate('5s 3s')
+      ])
+    ]),
+  ]
 })
 export class SectionInitialComponent {
+
+  ngOnInit() {
+  }
+
   faChevronRight = faChevronRight
   faUser = faUser
 
-  bancoImagens: object =  [
-    "../../../assets/img/bg-section-initial-alternative.png",
-    "../../../assets/img/bg-section-initial.png"
-  ]
+  bancoImagens: any[] = [
+    "../../../assets/img/bg-section-initial.jpg",
+    "../../../assets/img/bg-section-initial-alternative.jpg",
+    "../../../assets/img/bg-section-initial-alternative-2.jpg",
+  ];
 
 }
