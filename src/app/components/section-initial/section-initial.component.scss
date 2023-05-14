@@ -1,11 +1,17 @@
 @import '../../../styles.scss';
 
 .bg{
-    background-image: url('../../../assets/img/bg-section-initial-alternative.png');
+    background-image: url('../../../assets/img/bg-section-initial.jpg');
     background-size: cover;
     background-position: center top;
-    height: 51rem;
+    height: 100vmax;
     padding: 0;
+    @media(min-width: $grid-min-lg) and (max-width: $grid-max-lg){
+        height: 70vmax;
+    }
+    @media(min-width: $grid-min-xl){
+        height: 50vmax;
+    }
 }
 
 .overlay{
