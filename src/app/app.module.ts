@@ -8,13 +8,15 @@ import { CreditCardOneComponent } from './components/credit-card-one/credit-card
 import { HeaderComponent } from './components/header/header.component';
 import { SectionInitialComponent } from './components/section-initial/section-initial.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { BenefitsComponent } from './components/benefits/benefits.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CreditCardOneComponent,
     HeaderComponent,
-    SectionInitialComponent
+    SectionInitialComponent,
+    BenefitsComponent
   ],
   imports: [
     BrowserModule,
