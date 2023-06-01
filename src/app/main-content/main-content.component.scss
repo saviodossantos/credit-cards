@@ -1,0 +1,254 @@
+@import '../../styles.scss';
+
+.row {
+    // height: 34vmax;
+
+    &.block1 {
+
+        & .main-content-01 {
+            background-color: $white-3;
+            background-image: url('../../assets/img/main-content/block1/main-content-person.jpg');
+            background-size: 53rem;
+            background-position: center top;
+            background-repeat: no-repeat;
+            background-blend-mode: darken;
+            height: inherit;
+            border-radius: 24px;
+            transition: all .2s ease-out;
+
+            &:hover {
+                transform: scale(1.02);
+                box-shadow: 0 0 0 0 $white-3, 0 4px 24px 0 rgba(0, 0, 0, 0.08);
+                background-color: $white-2;
+
+            }
+
+            @media(max-width: $grid-max-xxs){
+                background-size: 40rem;
+                background-position: -17rem bottom;
+            }
+            @media(min-width: $grid-min-xs) and (max-width: $grid-max-xs){
+                background-size: 41rem;
+                background-position: -8rem 2rem;
+            }
+            @media(min-width: $grid-min-sm) and (max-width: $grid-max-sm){
+                background-size: 37rem;
+            }
+            @media(min-width: $grid-min-md) and (max-width: $grid-max-md){
+                background-size: 27rem;
+                background-position: 15rem top;
+            }
+            @media(min-width: $grid-min-lg) and (max-width: $grid-max-lg){
+                background-size: 38rem;
+            }
+            @media(min-width: $grid-min-xl) and (max-width: $grid-max-xl){
+                background-size: 45rem;
+                background-position: 4rem 5rem;
+            }
+            @media(min-width: $grid-min-xxl){
+                background-size: 54rem;
+                background-position: bottom;
+            }
+        }
+
+        & .main-content-02 {
+            background-color: $white-3;
+            height: 16.75vmax;
+            border-radius: 24px;
+            transition: all .2s ease-out;
+
+            &:hover {
+                transform: scale(1.02);
+                box-shadow: 0 0 0 0 $white-3, 0 4px 24px 0 rgba(0, 0, 0, 0.08);
+                background-color: $white-2;
+            }
+
+            &:nth-child(1) {
+                background-image: url('../../assets/img/main-content/block1/main-content-iphone.png');
+                background-size: 20rem;
+                background-position: 12rem -3rem;
+                background-repeat: no-repeat;
+
+                @media(max-width: $grid-max-xxs){
+                    background-size: 13rem;
+                    background-position: 7rem -1rem;
+                }
+                @media(min-width: $grid-min-xs) and (max-width: $grid-max-xs){
+                    background-size: 15rem;
+                    background-position: 12rem -2rem;
+                }
+                @media(min-width: $grid-min-sm) and (max-width: $grid-max-sm){
+                    background-size: 14rem;
+                    background-position: right -2rem;
+                }
+                @media(min-width: $grid-min-md) and (max-width: $grid-max-md){
+                    background-size: 14rem;
+                    background-position: 26rem -2rem;
+                }
+                @media(min-width: $grid-min-lg) and (max-width: $grid-max-lg){
+                    background-size: 12rem;
+                    background-position: top right;
+                }
+                @media(min-width: $grid-min-xl) and (max-width: $grid-max-xl){
+                    background-size: 16rem;
+                    background-position: top right;
+                }
+                @media(min-width: $grid-min-xxl){
+                    background-size: 22rem;
+                    background-position: 13rem;
+                }
+            }
+
+            &:nth-child(2) {
+                background-image: url('../../assets/img/main-content/block1/main-content-basketball.png');
+                // background-size: 16rem;
+                // background-position: 15rem 2rem;
+                background-repeat: no-repeat;
+
+                @media(max-width: $grid-max-xxs){
+                    background-size: 9rem;
+                    background-position: 8.6rem 1rem;
+                }
+                @media(min-width: $grid-min-xs) and (max-width: $grid-max-xs){
+                    background-size: 15rem;
+                    background-position: 13rem -2rem;
+                }
+                @media(min-width: $grid-min-sm) and (max-width: $grid-max-sm){
+                    background-size: 10rem;
+                    background-position: 20rem 1rem;
+                }
+                @media(min-width: $grid-min-md) and (max-width: $grid-max-md){
+                    background-size: 11rem;
+                    background-position: 28rem 1rem;
+                }
+                @media(min-width: $grid-min-lg) and (max-width: $grid-max-lg){
+                    background-size: 13rem;
+                    background-position: 12rem 2rem;
+                }
+                @media(min-width: $grid-min-xl) and (max-width: $grid-max-xl){
+                    background-size: 17rem;
+                    background-position: 18rem 2rem;
+                }
+                @media(min-width: $grid-min-xxl){
+                    background-size: 16rem;
+                    background-position: 16rem;
+                }
+            }
+
+        }
+    }
+
+    &.block2 {
+
+        & .main-content-01 {
+            background-color: $white-3;
+            background-image: url('../../assets/img/main-content/block2/main-content-entertainment-2.png');
+            background-size: 19rem;
+            background-position: -5rem 0;
+            background-repeat: no-repeat;
+            height: 16.75vmax;
+            border-radius: 24px;
+            transition: all .2s ease-out;
+
+            &:hover {
+                transform: scale(1.02);
+                box-shadow: 0 0 0 0 $white-3, 0 4px 24px 0 rgba(0, 0, 0, 0.08);
+                background-color: $white-2;
+            }
+
+        }
+
+        & .main-content-02 {
+            background-color: $white-3;
+            background-image: url('../../assets/img/main-content/block2/main-content-entertainment-popcorn.png');
+            background-size: 20rem;
+            background-position: 9rem -1rem;
+            background-repeat: no-repeat;
+            height: 16.75vmax;
+            border-radius: 24px;
+            transition: all .2s ease-out;
+
+            &:hover {
+                transform: scale(1.02);
+                box-shadow: 0 0 0 0 $white-3, 0 4px 24px 0 rgba(0, 0, 0, 0.08);
+                background-color: $white-2;
+            }
+        }
+
+        & .main-content-03 {
+            background-color: $white-3;
+            background-image: url('../../assets/img/main-content/block2/main-content-entertainment-airplane.png');
+            background-size: 20rem;
+            background-position: center bottom;
+            background-repeat: no-repeat;
+            height: 16.75vmax;
+            border-radius: 24px;
+            transition: all .2s ease-out;
+
+            &:hover {
+                transform: scale(1.02);
+                box-shadow: 0 0 0 0 $white-3, 0 4px 24px 0 rgba(0, 0, 0, 0.08);
+                background-color: $white-2;
+            }
+
+        }
+
+    }
+
+    &.block3 {
+
+        & .main-content-01 {
+            background-color: $white-3;
+            background-image: url('../../assets/img/main-content/block2/main-content-entertainment-2.png');
+            background-size: 19rem;
+            background-position: -5rem 0;
+            background-repeat: no-repeat;
+            height: 33vmax;
+            border-radius: 24px;
+            transition: all .2s ease-out;
+
+            &:hover {
+                transform: scale(1.02);
+                box-shadow: 0 0 0 0 $white-3, 0 4px 24px 0 rgba(0, 0, 0, 0.08);
+                background-color: $white-2;
+            }
+
+        }
+
+        & .main-content-02 {
+            background-color: $white-3;
+            background-image: url('../../assets/img/main-content/block2/main-content-entertainment-popcorn.png');
+            background-size: 20rem;
+            background-position: 9rem -1rem;
+            background-repeat: no-repeat;
+            height: 16.75vmax;
+            border-radius: 24px;
+            transition: all .2s ease-out;
+
+            &:hover {
+                transform: scale(1.02);
+                box-shadow: 0 0 0 0 $white-3, 0 4px 24px 0 rgba(0, 0, 0, 0.08);
+                background-color: $white-2;
+            }
+        }
+
+        & .main-content-03 {
+            background-color: $white-3;
+            background-image: url('../../assets/img/main-content/block2/main-content-entertainment-airplane.png');
+            background-size: 20rem;
+            background-position: center bottom;
+            background-repeat: no-repeat;
+            height: 16.75vmax;
+            border-radius: 24px;
+            transition: all .2s ease-out;
+
+            &:hover {
+                transform: scale(1.02);
+                box-shadow: 0 0 0 0 $white-3, 0 4px 24px 0 rgba(0, 0, 0, 0.08);
+                background-color: $white-2;
+            }
+
+        }
+
+    }
+}
