@@ -16,6 +16,8 @@ $grid-min-xxl: 1200px;
 
 // variables
 $white: #fff;
+$white-2: #f6f6f6;
+$white-3: #eceff1;
 $black: #000;
 $grey-dark: #1c1c1c; //#252525
 $grey-dark-variant: #696969;
@@ -28,6 +30,8 @@ $pantone-magenta-chip: #be3454b6;
 
 // flag colors
 $flag-master: #191970;
+
+
 $segment-color: #191970;
 
 @font-face {
@@ -47,4 +51,4 @@ $segment-color: #191970;
 
 *{font-family: 'roboto_condensed';}
 
-body{background-color: $grey-dark;}
+body{background-color: $white-2;}
