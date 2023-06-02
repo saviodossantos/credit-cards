@@ -31,10 +31,6 @@ export class SectionInitialComponent {
   faChevronRight = faChevronRight
   faUser = faUser
 
-  bancoImagens: any[] = [
-    "../../../assets/img/bg-section-initial.jpg",
-    "../../../assets/img/bg-section-initial-alternative.jpg",
-    "../../../assets/img/bg-section-initial-alternative-2.jpg",
-  ];
+  
 
 }
